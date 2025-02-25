@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interview Questions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100 text-gray-900 p-4">
+    <div class="card bg-white shadow-xl p-6 md:p-8 text-center w-full max-w-5xl">
+        <h1 class="text-3xl md:text-4xl font-bold mb-6 text-primary">JavaScript Interview Questions</h1>
+
+        <!-- Questions Section -->
+        <div class="space-y-3">
+            <script>
+                const questions = [
+                    { q: "What is JavaScript?", a: "JavaScript is a programming language used to add interactivity to web pages." },
+                    { q: "Difference between `let`, `const`, and `var`?", a: "<b>var:</b> Function-scoped, can be redeclared.<br><b>let:</b> Block-scoped, can be updated but not redeclared.<br><b>const:</b> Block-scoped, cannot be updated or redeclared." },
+                    { q: "What is a closure in JavaScript?", a: "A closure is a function that remembers its outer scope variables even after the outer function has executed." },
+                    { q: "What is hoisting?", a: "Hoisting is JavaScript’s behavior of moving function and variable declarations to the top of their scope." },
+                    { q: "Explain the `this` keyword.", a: "`this` refers to the object that is executing the function. In global scope, it refers to the global object." },
+                    { q: "Difference between `==` and `===`?", a: "<b>==</b> compares values with type coercion.<br><b>===</b> compares values and types strictly." },
+                    { q: "What are arrow functions?", a: "Arrow functions provide a concise syntax for writing functions and do not bind their own `this` value." },
+                    { q: "Difference between `null` and `undefined`?", a: "<b>null:</b> A value that represents no value.<br><b>undefined:</b> A variable declared but not assigned a value." },
+                    { q: "What is the event loop?", a: "The event loop manages asynchronous operations, executing queued tasks after synchronous code runs." },
+                    { q: "What is localStorage and sessionStorage?", a: "<b>localStorage:</b> Stores data with no expiration.<br><b>sessionStorage:</b> Stores data until the session ends." },
+                    { q: "What are JavaScript promises?", a: "A promise represents a value that may be available now, in the future, or never." },
+                    { q: "What are async/await?", a: "`async` functions return promises, and `await` is used to pause execution until the promise resolves." },
+                    { q: "What is debouncing?", a: "Debouncing limits the rate at which a function executes, useful in search input fields." },
+                    { q: "What is throttling?", a: "Throttling ensures a function executes only once in a specified time interval." },
+                    { q: "What is a shallow copy vs. deep copy?", a: "<b>Shallow Copy:</b> Copies only references, not nested objects.<br><b>Deep Copy:</b> Copies all levels of an object." },
+                    { q: "Difference between synchronous and asynchronous JavaScript?", a: "<b>Synchronous:</b> Code executes line by line.<br><b>Asynchronous:</b> Code runs in the background without blocking execution." },
+                    { q: "What is JSON?", a: "JSON (JavaScript Object Notation) is a lightweight format for storing and transporting data." },
+                    { q: "What is a prototype in JavaScript?", a: "A prototype is an object from which other objects inherit properties and methods." },
+                    { q: "What are higher-order functions?", a: "Functions that take another function as an argument or return a function." },
+                    { q: "What is currying?", a: "A function that takes multiple arguments and transforms them into a sequence of functions." },
+                    { q: "What is event delegation?", a: "A technique where a parent element handles events of its child elements." },
+                    { q: "What is destructuring in JavaScript?", a: "Destructuring allows extracting values from objects and arrays into variables." },
+                    { q: "What is a factory function?", a: "A function that returns an object without using `new`." },
+                    { q: "What is memoization?", a: "Optimization technique that stores computed results to avoid redundant calculations." },
+                    { q: "What is a pure function?", a: "A function that returns the same output for the same input and has no side effects." },
+                    { q: "What is function chaining?", a: "A technique where multiple function calls are chained together in a single statement." },
+                    { q: "What is object destructuring?", a: "A way to extract properties from an object into individual variables." },
+                    { q: "What are ES6 modules?", a: "ES6 modules allow importing/exporting functions, objects, or primitives from one file to another." },
+                    { q: "What is `Object.freeze()`?", a: "`Object.freeze(obj)` makes an object immutable, preventing changes to its properties." },
+                    { q: "What is the difference between `map()`, `forEach()`, and `filter()`?", a: "<b>map():</b> Returns a new array after applying a function to each element.<br><b>forEach():</b> Iterates over an array but does not return a new array.<br><b>filter():</b> Returns a new array with elements that pass a condition." },
+                    { q: "What is the difference between `find()` and `filter()`?", a: "<b>find():</b> Returns the first matching element.<br><b>filter():</b> Returns all matching elements." },
+                    { q: "What is `reduce()` in JavaScript?", a: "`reduce()` executes a function on each element of an array, returning a single value (e.g., sum, average)." },
+                    { q: "What is `setTimeout()` and `setInterval()`?", a: "<b>setTimeout():</b> Executes a function after a specified delay.<br><b>setInterval():</b> Executes a function repeatedly at specified intervals." },
+                    { q: "What is `typeof` operator?", a: "`typeof` returns the data type of a variable (e.g., `typeof 42` returns 'number')." },
+                    { q: "What is the difference between `slice()` and `splice()`?", a: "<b>slice():</b> Returns a portion of an array without modifying it.<br><b>splice():</b> Modifies an array by adding/removing elements." }
+                ];
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    const container = document.querySelector(".space-y-3");
+                    questions.forEach((item, index) => {
+                        container.innerHTML += `
+                            <div class="collapse bg-base-200 mb-2">
+                                <input type="checkbox" class="peer">
+                                <div class="collapse-title text-lg font-semibold">${index + 1}. ${item.q}</div>
+                                <div class="collapse-content p-4">
+                                    <p>${item.a}</p>
+                                </div>
+                            </div>
+                        `;
+                    });
+                });
+            </script>
+        </div>
+		
+		<!-- script tag add  -->
+
+		<script src="/index.js"></script>
+    </div>
+</body>
+</html>
