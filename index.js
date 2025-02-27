@@ -191,16 +191,216 @@ function grade(number){
 // 	console.log(`sum : ${result}`);
 // }
 
-let num1 = 3;
-let num2 = 5;
+// let num1 = 3;
+// let num2 = 5;
 
-let result = (num1 > num2) ? `double ${num1 * 2}` : `sum: ${num1 + num2}`;
+// let result = (num1 > num2) ? `double ${num1 * 2}` : `sum: ${num1 + num2}`;
 
-console.log(result);
+// console.log(result);
+
+//practice task 01
+
+// let fruits = ['apple', 'orange', 'mango', 'pineapple', 'watermelon'];
+// console.log(fruits[3]);
+// fruits[2] = 'banana';
+// console.log(fruits);
+
+//practice task array 02
+
+// let destinations = ['coxs bazar', 'saint martin', 'kuakata'];
+// destinations.push('sea beach')
+// console.log(destinations);
+// destinations.push('bandarban', 'kaptai');
+// console.log(destinations);
+// destinations.pop();
+// console.log(destinations);
 
 
+//practice task 03
+// let books = ['math', 'english', 'physics', 'chemistry', 'biology'];
+
+// books.includes('math');
+// console.log(books);
 
 
+//practice task 04
+// let array = ['book', 'math', 'clock']
+// let just = 'my name';
+// console.log(Array.isArray(array));
+// console.log(Array.isArray(just));
+
+
+//practice task 05
+// let array1 = ['math', 'chemistry', 'physics', 'biology'];
+// let array2 = ['shakib', 'mashrafe', 'tamim'];
+
+// let result = array1.concat(array2);
+// console.log(result);
+
+//practice task break 01
+// for(let i = 1; i < 200 ; i++){
+// 	if(i >= 100){
+// 		console.log('break condition', i);
+// 		break;
+// 	}
+// 	console.log('final break condition', i);
+// }
+
+//practice problem 02
+// let sum = 0;
+// let i = 1;
+
+// while(true){
+// 	sum += 1;
+// 	console.log(`Adding ${i}, Total sum: ${sum}`);
+
+// 	if(sum >= 100){
+// 		console.log('Sum reached 100 or more! Stopping the loop');
+// 		break;
+// 	}
+// 	i++; 
+// }
+
+//practice problem 03
+// for(let i = 1; i <= 100; i++){
+// 	console.log('i check', i);
+// 	if(Math.sqrt(i) % 1 === 0){
+// 		console.log(`first square number found: ${i}. stopping the loop`);
+// 		break;
+// 	}
+// }
+
+// for(let i = 1; i <= 100; i++){
+// 	console.log(i);
+// 	if(Math.sqrt(i) % 1 === 0){
+// 		console.log(`square number, ${i}`);
+// 	}
+// }
+
+//for loop problem
+// for(let i = 1; i <= 60; i++){
+// 	console.log('I will invest at least 6 hrs every single day for next 60 days!', i);
+// }
+
+//for loop problem 02
+// for (let i = 61; i <= 100; i++){
+// 	if(i % 2 === 1){
+// 		console.log('odd number--->', i);
+// 	}
+// }
+
+// for(let i = 61; i<= 100; i +=2){
+// 	console.log('odd number', i);
+// }
+
+// for(let i = 78; i <= 98; i++){
+// 	if(i % 2 === 0){
+// 		console.log('even number --->', i);
+// 	}
+// }
+
+
+// for(let i = 78; i<= 98; i += 2){
+// 	console.log(`even number ---> ${i}`);
+// }
+
+//display sum of all odd numbers
+// let sum = 0;
+// for(let i = 91; i <= 129; i++){
+// 	console.log(`all numbers find: ${i}`);
+// 	if(i % 2 === 1){
+// 		console.log(`all odd numbers: ${i}`);
+// 		sum = sum + i;
+// 		console.log(`sum of all odd numbers: ${sum}`);
+// 	}
+// }
+
+// let sum = 0;
+// for(let i = 51; i <= 85; i++){
+// 	// console.log(`all numbers find: ${i}`);
+// 	if(i % 2 === 0){
+// 		// console.log(`all even numbers: ${i}`);
+// 		sum = sum + i;
+// 		console.log(`even numbers sum: ${sum}`);
+// 	}
+// }
+
+
+// let number =  9;
+// for(let i = 1; i <= 10; i++){
+// 	console.log(`${number} x ${i} = ${number * i}`);
+// }
+
+// for(let i = 81; i >= 65; i--){
+// 	console.log(`decrease numbers: ${i}`);
+// }
+
+// let i = 1;
+// while(i <= 60){
+// 	console.log(`I will invest at least 6 hrs every single day for next 60 days! ${i}`);
+// 	i++;
+// }
+
+// let i = 61;
+// while(i <= 100){
+// 	// console.log(`find all numbers: ${i}`);
+// 	if(i % 2 === 1){
+// 		console.log(`all odd numbers: ${i}`);
+// 	}
+// 	i++;
+// }
+
+// let i = 78;
+// while(i <= 98){
+// 	// console.log(`find all numbers 78 to 98`);
+// 	if(i % 2 === 0){
+// 		console.log(`all even numbers: ${i}`);
+// 	};
+// 	i++;
+// }
+
+// 81 to 131 sum odd numbers
+// let sum = 0;
+// let i = 81;
+// while(i <= 131){
+// 	// console.log(`find all numbers: ${i}`);
+// 	if(i % 2 === 1){
+// 		// console.log(`all odd numbers: ${i}`);
+// 		sum = sum + i;
+// 		console.log(`all odd numbers sum: ${sum}`);
+// 	}
+// 	i++;
+// }
+
+//Display sum of all the even numbers from 206 to 311.
+// let sum = 0;
+// let i = 206;
+// while(i <= 311){
+// 	// console.log(`all numbers find: ${i}`);
+// 	if(i % 2 === 0){
+// 		// console.log(`all even numbers: ${i}`);
+// 		sum = sum + i;
+// 		console.log(`all even numbers sum: ${sum}`);
+// 	}
+// 	i++;
+// }
+
+//As Ersa is learning now, she wants to explore more and more. Tell Ersa to generate a multiplication table for number 5
+
+// let number = 5;
+// let i = 1;
+// while(i <= 10){
+// 	// console.log(`all numbers find: ${i}`);
+// 	console.log(`${number} x ${i} = ${number * i}`);
+// 	i++;
+
+// }
+
+// let i = 21;
+// while(i >= 15){
+// 	console.log(`all numbers find: ${i}`);
+// 	i--;
+// }
 
 
 
