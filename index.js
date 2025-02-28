@@ -422,6 +422,77 @@ function grade(number){
 // 	}
 // }
 
+// let sentence = 'i am a web developer';
+// let reverse = '';
+
+// for (let letter of sentence){
+// 	// console.log(letter);
+// 	reverse = letter + reverse;
+// 	// console.log(reverse);
+// }
+// console.log(reverse);
+
+//js-object-task
+// const colors = {
+//     red: "#ff0000",
+//     green: "#00ff00",
+//     blue: "#0000ff",
+//     "golden rod": '#daa520'
+// };
+
+// const golden_rod = colors['golden rod'];
+// console.log(golden_rod);
+
+// const car = {
+//     make: "Toyota",
+//     model: "Corolla",
+//     year: 2020
+// };
+
+// car.passengerCapacity = 5;
+
+// console.log(car);
+
+// const student = {
+//     name: "Hamim Sakep",
+//     id: 5421,
+//     physics: {
+//         subject: "HSC Physics",
+//         author: "Shahjahan Tapan",
+//         marks: 30
+//     }
+// };
+
+// const marks = student.physics.marks;
+// console.log(marks);
+
+// let student = {
+//     name: 'Ariana Grande',
+//     age: 21,
+//     city: 'Gaibandha',
+//     isStudent: true
+// };
+
+// // // const properties = Object.keys(student).length;
+// // // console.log(properties);
+// // const properties = Object.keys(student);
+// // console.log(properties);
+// const values = Object.values(student);
+// console.log(values);
+// let myObject = {
+
+// 	name: 'John Doe',
+// 	age: 25,
+// 	city: 'Example City',
+// 	isStudent: true
+// 	};
+
+// const keys = Object.keys(myObject);
+// console.log('keys: ',keys);
+// for(let key in myObject){
+// 	console.log(`key: ${key} | type: ${typeof myObject[key]}`);
+	
+// }
 
 
 
