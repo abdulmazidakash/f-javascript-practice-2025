@@ -494,7 +494,59 @@ function grade(number){
 	
 // }
 
+// const name = 'Abdul mazid akash';
+// let count = 0;
 
+// for(let nam of name){
+// 	// console.log(nam);
+// 	if(nam === 'a'){
+// 		count++;
+// 	}
+// }
+
+// console.log(count);
+
+// let name = 'Shakib Al Hasan';
+// let count = 0;
+
+// for(let nam of name){
+// 	// console.log(nam);
+// 	if(nam.toLowerCase() === 'a'){
+// 		// console.log(`lowercase a`);
+// 		count++;
+// 		// console.log(`a count: ${count}`);
+// 	}
+// }
+// console.log(`a count: ${count}`);
+
+// let name = 'shakib Al hasan';
+// let vowels = ['a', 'e', 'i', 'o', 'u'];
+// let count = 0;
+
+// for(let letter of name.toLowerCase()){
+// 	// console.log(letter);
+// 	if(vowels.includes(letter)){
+// 		count++;
+
+// 	}
+// }
+
+// console.log(count);
+
+// function replaceXWithY(str) {
+//     return str.replaceAll('x', 'y').replaceAll('X', 'Y');
+// }
+
+// console.log(replaceXWithY('eXample text saY'));
+
+function capitalizeWords(str) {
+    return str
+        .split(' ') // Split the string into words
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize each word
+        .join(' '); // Join words back into a sentence
+}
+
+console.log(capitalizeWords('example text'));
 
 
 
