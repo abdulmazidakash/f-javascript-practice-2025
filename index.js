@@ -546,7 +546,158 @@ function capitalizeWords(str) {
         .join(' '); // Join words back into a sentence
 }
 
-console.log(capitalizeWords('example text'));
+// console.log(capitalizeWords('example text'));
+
+
+//end game assessment test 10
+
+// console.log('start');
+// setTimeout(()=>{
+// 	console.log('Timeout');
+// }, 0);
+
+// Promise.resolve().then(()=> console.log('Promise'));
+// console.log('End');
+
+// import {useState, useEffect} from 'react';
+// const Counter =()=>{
+// 	const [count, setCount] = useState(0);
+
+// 	useEffect(()=>{
+// 		setInterval(() => {
+// 			setCount(count + 1)
+// 		}, 1000);
+// 	}, []);
+// 	return <h1>{count}</h1>
+// };
+
+// export default Counter;
+
+
+// function User(name){
+// 	this.name = name;
+// };
+
+// User.prototype.sayHello = () =>{
+// 	console.log(`Hello, ${this.name}`);
+// };
+
+// const user1 = new User("Alice");
+// user1.sayHello();
+
+// function counter(){
+// 	let count = 0;
+// 	return () => console.log(count++);
+// };
+
+// const count1 = counter();
+// count1;
+// count1;
+
+// const count2 = counter();
+// count2();
+// count2();
+
+// console.log(foo);
+// var foo = 'Hello';
+// console.log(foo);
+
+// app.get('/data', async(req, res)=>{
+// 	const result = fetch('https://api.example.com/data');
+// 	res.send(await result.json());
+// })
+
+// app.use((req, res, next)=>{
+// 	console.log('request received');
+// })
+
+// useEffect(() => {
+//   console.log('effect runs');
+// }, [user])
+
+// function sum(...numbers, extra){
+// 	return numbers.reduce((acc, num) => acc + num, 0) + extra;
+// };
+
+// const [user, setUser] = useState({name: "Alice", age: 25});
+
+// function updateAge(){
+// 	setUser({ age: 30});
+// }
+
+// function MyComponent(){
+// 	const inputRef = useRef();
+
+// 	useEffect(()=>{
+// 		inputRef.current.focus();
+// 	}, []);
+// 	return <input />
+// }
+
+{/* <div onclick="console.log('Div clicked')">
+	<button onclick="console.log('Button clicked')">Click me</button>
+</div> */}
+
+// console.log(1 + '2' + 3);
+
+// function fetchData(){
+// 	let data;
+// 	fetch("https://api.example.com/data")
+// 	.then(response => response.json())
+// 	.then(json => data=json);
+// 	return data;
+// }
+
+// function multiply(x, y= 2){
+// 	return x * y;
+// }
+// console.log(multiply(5));
+// console.log(multiply(5, undefined));
+// console.log(multiply(5, null));
+
+// const a = [1, 2, 3];
+// const b = a;
+// b.push(4);
+// console.log(a);
+
+// let x = 1;
+// let y = 2;
+// x = x + y++;
+// console.log(x, y);
+
+// let x = [1, 2, 3];
+// let y = [...x];
+// y[0] = 4;
+// console.log(x[0], y[0]);
+
+// const numbers = [1, 2, 3];
+// numbers[10]= 10;
+// console.log(numbers.length);
+
+// let numbers = [1, 2, 3];
+// numbers = numbers.map(num => num * 2);
+// console.log(numbers);
+
+// const x = 10;
+// function foo(){
+// 	console.log(x);
+// 	const x = 20;
+// }
+
+// foo();
+
+// db.collection.find({name: "Alice"}).limit("5");
+
+// h1{
+// 	font-size: 24px;
+// 	font-size: 30px;
+// }
+
+for(var i = 0; i < 3; i++){
+	document.querySelector.querySelector("button").addEventListener("click", function(){
+		console.log(i);
+	})
+}
 
 
 
