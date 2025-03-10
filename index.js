@@ -693,12 +693,152 @@ function capitalizeWords(str) {
 // 	font-size: 30px;
 // }
 
-for(var i = 0; i < 3; i++){
-	document.querySelector.querySelector("button").addEventListener("click", function(){
-		console.log(i);
-	})
+// for(var i = 0; i < 3; i++){
+// 	document.querySelector.querySelector("button").addEventListener("click", function(){
+// 		console.log(i);
+// 	})
 	
+// }
+//js-array-loop-task
+
+// const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+// colors.reverse();
+// console.log(colors);
+// const rev = [];
+// for(let color of colors){
+// 	// console.log(color);
+// 	rev.unshift(color);
+// }
+// console.log(rev);
+
+// for(let i= 0; i < colors.length; i++){
+// 	const color = colors[i];
+// 	// rev.unshift(color);
+// 	rev.shift(color);
+// };
+// console.log(rev);
+// const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+// const rev = [];
+
+// for(let i = colors.length - 1; i >= 0; i--){
+// 	const color = colors[i];
+// 	rev.push(color);
+
+// };
+// console.log(rev);
+
+// const numbers = [12, 98, 5, 41, 23, 78, 46];
+// const even = [];
+
+// for(let i = 0; i < numbers.length; i++){
+// 	console.log(numbers[i]);
+// 	if(numbers[i] % 2 === 0){
+// 		even.push(numbers[i]);
+// 	}
+
+// }
+
+// for(let num of numbers){
+// 	if(num % 2 === 0){
+// 		even.push(num);
+// 	}
+// }
+
+// console.log(even);
+// const numbers = [12, 98, 5, 41, 23, 78, 46];
+// const even = [];
+
+// let i = 0;
+// while(i < numbers.length){
+// 	if(numbers[i] % 2 === 0){
+// 		even.push(numbers[i]);
+// 	};
+// 	i++;
+
+// }
+// console.log(even);
+
+// var numbers = ['Tom', 'Tim', 'Tin', 'Tik'];
+// let result = '';
+
+// for(let num of numbers){
+// 	result = result.concat(num)
+// }
+// for(let num of numbers){
+// 	result += num;
+// }
+// console.log(result);
+
+// const statement = 'I am a hard working person';
+// let rev = statement.split(' ');
+
+// for(let state of statement){
+// 	// console.log(state);
+// 	rev = state + rev;
+// };
+// console.log(rev);
+
+// function odd(number){
+// 	if(number % 2 === 1){
+// 		return true;
+// 	}
+// 	return false;
+// }
+
+// console.log(odd(10));
+// console.log(odd(7));
+
+// function multiply(num1, num2, num3, num4){
+// 	// console.log(num1, num2, num3, num4);
+// 	const result = num1 * num2 * num3 * num4;
+// 	return result;
+// }
+
+// console.log(multiply(3, 3, 3, 3));;
+
+// function difference(num){
+// 	if(num % 2 === 1){
+// 		return num * 2;
+// 	}
+// 	return num / 2;
+// }
+
+// console.log(difference(9));
+
+// function  make_avg(arr, size){
+
+// 	if(size === 0) return 0;
+// 	let sum = 0;
+// 	for(let ar of arr){
+// 		// console.log(ar);
+// 		sum += ar;
+// 		// console.log(sum);
+// 	}
+// 	const divide = sum / size;
+// 	return divide;
+// }
+
+// console.log(make_avg([1, 3, 5, 6], 5));
+
+// function count_zero(binaryString){
+// 	if (typeof binaryString !== 'string'){
+// 		binaryString = binaryString.toString();
+// 	}
+// 	let count = 0;
+// 	for(let char of binaryString){
+// 		if(char === '0'){
+// 			count++;
+// 		}
+// 	}
+// 	return count;
+// };
+
+// console.log(count_zero(10134203450));
+
+function odd_even(num){
+    if(num % 2 === 0){
+		return `even`;
+	}
+	return `odd`;
 }
-
-
-
+console.log(odd_even(5));
