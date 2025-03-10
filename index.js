@@ -835,10 +835,71 @@ function capitalizeWords(str) {
 
 // console.log(count_zero(10134203450));
 
-function odd_even(num){
-    if(num % 2 === 0){
-		return `even`;
-	}
-	return `odd`;
-}
-console.log(odd_even(5));
+// function odd_even(num){
+//     if(num % 2 === 0){
+// 		return `even`;
+// 	}
+// 	return `odd`;
+// }
+// console.log(odd_even(5));
+
+// function fahrenheit(celsius){
+// 	return (celsius * 9/5) + 32;
+// }
+
+// console.log(fahrenheit(2));
+
+// function duplicate(arr){
+// 	// console.log(arr);
+// 	let dup = [];
+// 	for(let num of arr){
+// 		// console.log(num);
+// 		if(arr.includes(num) === false){
+// 			console.log(num);
+//             dup.push(num);
+// 			// return dup;
+// 			console.log(dup);
+// 		}
+// 	}
+// };
+// const numbers = [5,6,11,12,98, 5];
+// console.log(duplicate(numbers));
+
+
+// function countVowels(str){
+// 	const vowels = ['a', 'e', 'i', 'o', 'u'];
+// 	let count = 0;
+// 	// console.log(str);
+// 	for(let st of str.toLowerCase()){
+// 		// console.log(st);
+// 		if(vowels.includes(st)){
+// 			count++;
+// 		}
+// 	}
+// 	return count;
+// }
+
+// const string = 'Abdul Mazid Akash';
+// console.log(countVowels(string));
+
+// function longestWord(str){
+// 	const words = str.split(' ');
+// 	let longestWord = '';
+// 	for(let word of words){
+//         if(word.length > longestWord.length){
+// 			longestWord = word;
+// 		}
+// 	}
+// 	return longestWord;
+
+// }
+
+// // const sentence = "I am learning Programming to become a programmer";
+// const sentence = 'Shakib Al Hasan';
+// console.log(longestWord(sentence));
+
+function getRndInteger(min, max) {
+	return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+
+  console.log(getRndInteger(10, 20));
