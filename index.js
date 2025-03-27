@@ -191,12 +191,31 @@ function grade(number){
 // 	console.log(`sum : ${result}`);
 // }
 
-let num1 = 3;
-let num2 = 5;
+// let num1 = 3;
+// let num2 = 5;
 
-let result = (num1 > num2) ? `double ${num1 * 2}` : `sum: ${num1 + num2}`;
+// let result = (num1 > num2) ? `double ${num1 * 2}` : `sum: ${num1 + num2}`;
 
-console.log(result);
+// console.log(result);
+
+
+//
+function marketQuantity(shirtQuantity, pantQuantity, shoeQuantity){
+	const perShirtPrice = 500;
+	const perPantPrice = 300;
+	const perShoePrice = 900;
+
+	const shirtTotalPrice = shirtQuantity * perShirtPrice;
+	const pantTotalPrice = pantQuantity * perPantPrice;
+	const shoeTotalPrice = shoeQuantity * perShoePrice;
+
+	const totalPrice = shirtTotalPrice + pantTotalPrice + shoeTotalPrice;
+
+	return totalPrice;
+}
+
+const price = marketQuantity(1, 1, 1);
+console.log('price needed ---->', price );
 
 
 
