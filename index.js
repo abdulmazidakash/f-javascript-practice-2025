@@ -200,22 +200,43 @@ function grade(number){
 
 
 //
-function marketQuantity(shirtQuantity, pantQuantity, shoeQuantity){
-	const perShirtPrice = 500;
-	const perPantPrice = 300;
-	const perShoePrice = 900;
+// function marketQuantity(shirtQuantity, pantQuantity, shoeQuantity){
+// 	const perShirtPrice = 500;
+// 	const perPantPrice = 300;
+// 	const perShoePrice = 900;
 
-	const shirtTotalPrice = shirtQuantity * perShirtPrice;
-	const pantTotalPrice = pantQuantity * perPantPrice;
-	const shoeTotalPrice = shoeQuantity * perShoePrice;
+// 	const shirtTotalPrice = shirtQuantity * perShirtPrice;
+// 	const pantTotalPrice = pantQuantity * perPantPrice;
+// 	const shoeTotalPrice = shoeQuantity * perShoePrice;
 
-	const totalPrice = shirtTotalPrice + pantTotalPrice + shoeTotalPrice;
+// 	const totalPrice = shirtTotalPrice + pantTotalPrice + shoeTotalPrice;
 
-	return totalPrice;
-}
+// 	return totalPrice;
+// }
 
-const price = marketQuantity(1, 1, 1);
-console.log('price needed ---->', price );
+// const price = marketQuantity(1, 1, 1);
+// console.log('price needed ---->', price );
+
+const products = [
+	{ name: 'shampoo', price: 400, quantity: 1},
+	{ name: 'chiruni', price: 100, quantity: 1},
+	{ name: 'shirt', price: 200, quantity: 1},
+	{ name: 'pant', price: 600, quantity: 1},
+];
+
+function getShoppingTotal(products){
+	let total = 0;
+	for(let product of products){
+	// console.log(product);
+	let totalProductCost = product.price * product.quantity;
+	total = total + totalProductCost;
+	}
+
+	return total;
+};
+
+const total = getShoppingTotal(products);
+console.log(total);
 
 
 
