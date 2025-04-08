@@ -229,6 +229,7 @@ function getShoppingTotal(products){
 	for(let product of products){
 	// console.log(product);
 	let totalProductCost = product.price * product.quantity;
+	
 	total = total + totalProductCost;
 	}
 
