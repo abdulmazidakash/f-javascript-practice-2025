@@ -232,7 +232,6 @@ function getShoppingTotal(products){
 	
 	total = total + totalProductCost;
 	}
-
 	return total;
 };
 
