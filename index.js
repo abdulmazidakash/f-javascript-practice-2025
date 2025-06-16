@@ -191,12 +191,12 @@ function grade(number){
 // 	console.log(`sum : ${result}`);
 // }
 
-let num1 = 3;
-let num2 = 5;
+// let num1 = 3;
+// let num2 = 5;
 
-let result = (num1 > num2) ? `double ${num1 * 2}` : `sum: ${num1 + num2}`;
+// let result = (num1 > num2) ? `double ${num1 * 2}` : `sum: ${num1 + num2}`;
 
-console.log(result);
+// console.log(result);
 
 
 
