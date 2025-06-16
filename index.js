@@ -198,6 +198,92 @@ function grade(number){
 
 // console.log(result);
 
+// let a = 5;
+// function add(num1, num2){
+// 	const result = num1 + num2 + a;
+// 	return result;
+// }
+
+// const sum = add(4, 5);
+// console.log(sum);
+
+// function one(){
+// 	console.log('a');
+// 	two();
+// 	console.log('c');
+// }
+
+// function two(){
+// 	console.log('b');
+// }
+// one()
+
+// const myLoader = ()=>{
+// 	return new Promise((resolve, reject)=>{
+// 		let success = Math.random();
+// 		if(success > 0.5){
+// 			resolve('Data loaded successfully');
+// 		}else{
+// 			reject('Data loading failed');
+// 		}
+// 	})
+// }
+
+// myLoader()
+// 	.then(data =>console.log('resolved data--->', data))
+// 	.catch(err => console.log('reject data error', err))
+
+// fetch('')
+
+// console.log(1);
+// console.log(2);
+// setTimeout(() => {
+// 	console.log(3);
+// }, 4000);
+// console.log(4);
+// console.log(5);
+
+// let num =0;
+// const clockId = setInterval(()=>{
+// 	num++;
+// 	console.log(clockId,num);
+// }, 2000)
+
+// function delayedGreeting(name){
+// 	setTimeout(()=>{
+// 		console.log(`hello ${name}`)
+// 	}, 2000)
+// }
+// delayedGreeting('Abdul Mazid Akash 🕒');
+// delayedGreeting('Shakib al Hasan 🕒');
+
+// const employee = {
+// 	ide: 'vs code',
+// 	machine: 'mac',
+// 	specification: {
+// 		height: 5.8,
+// 		weight: 70,
+// 	}
+// }
+
+// const {height} = employee.specification;
+// const {specification: {height, weight}} = employee;
+// const {specification: {height}, specification: {weight}} = employee;
+// console.log(height, weight);
+
+// const addLocalStorage = ()=>{
+// 	const idInput = document.getElementById('storageId');
+// 	const idValue = idInput.value;
+// 	const storageValue = document.getElementById('storageValue');
+// 	const value = storageValue.value;
+
+// 	if(idValue && value){
+// 		localStorage.setItem(idValue, value);
+// 		idInput.value = '';
+// 		storageValue.value = '';
+// 	}
+
+// }
 
 
 
