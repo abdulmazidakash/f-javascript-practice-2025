@@ -285,6 +285,143 @@ function grade(number){
 
 // }
 
+// function multiply(a, b){
+// 	return a * b;
+// }
+// console.log(multiply(5, 6));
+
+// function add(a, b){
+// 	console.log(a,b);
+// }
+// console.log(add(5, 6));
+
+// function counter(){
+// 	let count = 0;
+
+// 	function increment(){
+// 		count++;
+// 		console.log(`Count: ${count}`);
+// 	}
+// 	return increment;
+// }
+
+// const myCounter = counter();
+// myCounter(); // Count: 1
+// myCounter();
+// myCounter();
+
+// let arr = [];
+// arr.push(23);
+// arr.push(26);
+// arr.push(28);
+// arr.push(20);
+// arr.push(20);
+// console.log(arr);
+// arr.pop();
+// console.log(arr);
+// let arr = new Array(3);
+// arr.push(10);
+// arr[0]=100;
+// arr[1]=23;
+// arr[2]=26;
+// arr[3]=29;
+
+// arr[8]=36;
+// let arr = [];
+// let arr = new Array(5);
+// arr[0] = Number(prompt('enter a value'));
+// arr[1] = Number(prompt('enter a value'));
+// arr[2] = Number(prompt('enter a value'));
+// arr[3] = Number(prompt('enter a value'));
+// for(let i=0; i<arr.length; i++){
+// 	arr[i]=Number(prompt('enter a value'))
+// }
+// console.log(arr);
+// let sum = 0;
+
+// for(let i = 0; i<arr.length; i++){
+	// 	sum = sum + arr[i];
+	
+	// }
+	// let max = arr[0];
+	
+	// for(let i = 0; i<arr.length;i++){
+		// 	if(max < arr[i]){
+			// 		max = arr[i];
+			// 	}
+		// }
+		// let max = Math.max(arr[0], arr[1]);
+		// let sMax = Math.min(arr[0], arr[1]);
+		
+		// for(let i =2; i <arr.length; i++){
+			// 	if(arr[i] > max){
+				// 		sMax = max;
+				// 		max = arr[i]
+				// 	}else if(arr[i] > sMax && max !== arr[i]){
+					// 		sMax = arr[i];
+					// 	}
+					// }
+					// let temp = new Array(arr.length);
+					
+// let j = 0;
+// for(let i = arr.length -1; i >= 0; i--){
+	// 	// console.log(arr[i]);
+// 	temp[j] = arr[i];
+// 	j++;
+// }
+
+// let arr = [12, 23, 2, 3, 40, 60, 60, 60];
+// let i = 0, j = arr.length-1;
+
+// while(i != j){
+// 	let temp = arr[i];
+// 	arr[i] = arr[j];
+// 	arr[j] = temp
+// 	i++
+// 	j--
+// }
+// let arr = [1, 1, 0, 1, 0, 1, 1, 0, 0];
+// let i = 0, j = 0;
+// while(i <arr.length){
+// 	if(arr[i] == 0){
+// 		let temp = arr[i];
+// 		arr[i] = arr[j];
+// 		arr[j] = temp;
+// 		j++;
+// 	}
+// 	i++;
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+// let copy = arr[0];
+// console.log(copy);
+
+// for(let i=0; i<arr.length; i++){
+	// 	arr[i] = arr[i+1];
+	// };
+	// arr[arr.length-1] = copy;
+	
+	// let arr = [1, 2, 3, 4, 5];
+	// let copy = arr[arr.length - 1];
+	// console.log(copy);
+	// for(let i = arr.length-1; i > 0; i--){
+		// 	arr[i] = arr[i -1];
+		// };
+		// arr[0] = copy;
+		// console.log(arr[0]);
+		// console.log(copy);
+		// console.log(arr);
+let arr = [1, 2, 3, 4, 5];
+let copy = arr[0];
+// console.log(copy);
+for(let i =0; i<arr.length; i++){
+	// console.log(arr[i - 1]);
+	arr[i] = arr[i +1];
+}
+arr[arr.length - 1] = copy;
+console.log(arr[arr.length - 1]);
+console.log(arr);
+
 
 
 
