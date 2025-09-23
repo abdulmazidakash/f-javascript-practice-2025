@@ -411,17 +411,24 @@ function grade(number){
 		// console.log(arr[0]);
 		// console.log(copy);
 		// console.log(arr);
-let arr = [1, 2, 3, 4, 5];
-let copy = arr[0];
-// console.log(copy);
-for(let i =0; i<arr.length; i++){
-	// console.log(arr[i - 1]);
-	arr[i] = arr[i +1];
-}
-arr[arr.length - 1] = copy;
-console.log(arr[arr.length - 1]);
-console.log(arr);
+// let arr = [1, 2, 3, 4, 5];
+// let copy = arr[0];
+// // console.log(copy);
+// for(let i =0; i<arr.length; i++){
+// 	// console.log(arr[i - 1]);
+// 	arr[i] = arr[i +1];
+// }
+// arr[arr.length - 1] = copy;
+// console.log(arr[arr.length - 1]);
+// console.log(arr);
 
+// {
+// 	console.log(b);
+// 	let b;
+// }
+
+let age = 20;
+age <= 18? console.log('you are adult') : console.log('you are married');
 
 
 
